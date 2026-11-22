@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Fernando Guillén | Desarrollador Web</title>
-  <meta name="description" content="Portafolio de Fernando Guillén, desarrollador web especializado en e-commerce, frontend, backend y experiencias web modernas." />
+  <title>Naatia | Páginas web, menús QR y tiendas en línea</title>
+  <meta name="description" content="Naatia crea páginas web profesionales, menús digitales QR y tiendas online para negocios en México. Cotiza directamente por WhatsApp." />
 
+  <meta name="theme-color" content="#07070d" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Naatia | Soluciones digitales para negocios" />
+  <meta property="og:description" content="Páginas web, menús digitales QR y tiendas en línea. Cotiza tu proyecto." />
+  <link rel="canonical" href="https://www.fgdev.online/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,38 +23,43 @@
   <div class="orb orb-two"></div>
   <div class="orb orb-three"></div>
 
+  <a href="#inicio" class="skip-link">Ir al contenido</a>
   <header class="navbar">
-    <a href="#inicio" class="logo">FG<span>.</span></a>
-
-    <nav>
-      <a href="#inicio">Inicio</a>
+    <a href="#inicio" class="brand" aria-label="Naatia, ir al inicio">
+      <span class="brand-mark"><img src="https://raw.githubusercontent.com/FGDevStudio/naatia-web/main/img/logo-naatia.png" alt="" width="48" height="48" /></span>
+      <span class="brand-text">Naatia<small>Soluciones digitales</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
       <a href="#proyectos">Proyectos</a>
-      <a href="#skills">Stack</a>
+      <a href="#skills">Tecnologías</a>
       <a href="#proceso">Proceso</a>
       <a href="#contacto">Contacto</a>
     </nav>
+    <a class="nav-contact" data-wa="general" href="https://wa.me/525576901927" target="_blank" rel="noopener noreferrer">Cotizar ahora <span aria-hidden="true">↗</span></a>
   </header>
 
   <main>
     <section class="hero" id="inicio">
       <div class="hero-content">
-        <p class="tag">Disponible para proyectos freelance</p>
+        <p class="tag"><span class="status-dot" aria-hidden="true"></span> Desarrollo web para negocios</p>
 
-        <h1>Creo sitios web modernos, rápidos y listos para crecer.</h1>
+        <h1>Tu negocio merece <em>destacar en internet.</em></h1>
 
         <p class="hero-text">
-          Soy Fernando Guillén, desarrollador web enfocado en crear experiencias digitales modernas, funcionales y listas para producción.
+          En Naatia diseñamos páginas web, menús digitales y tiendas online que presentan tu negocio con profesionalismo y facilitan el contacto con tus clientes.
         </p>
 
         <div class="hero-actions">
-          <a href="#proyectos" class="btn primary">Ver proyectos</a>
-          <a href="#contacto" class="btn secondary">Contactarme</a>
+          <a href="https://wa.me/525576901927" data-wa="general" target="_blank" rel="noopener noreferrer" class="btn primary">Solicitar cotización ↗</a>
+          <a href="#servicios" class="btn secondary">Ver servicios ↓</a>
         </div>
 
         <div class="hero-mini">
-          <span>Frontend</span>
-          <span>Backend</span>
-          <span>E-commerce</span>
+          <span>✓ Diseño adaptable</span>
+          <span>✓ Atención directa</span>
+          <span>✓ Soluciones a medida</span>
         </div>
       </div>
 
@@ -77,18 +87,55 @@
       </div>
       <div>
         <strong>Full</strong>
-        <span>Frontend + Backend</span>
+        <span>Desarrollo completo</span>
       </div>
       <div>
         <strong>100%</strong>
-        <span>Responsive</span>
+        <span>Diseño responsive</span>
       </div>
+    </section>
+
+
+    <section class="section" id="servicios">
+      <div class="section-head">
+        <p>Servicios digitales</p>
+        <h2>Una solución para cada etapa de tu negocio.</h2>
+        <p class="section-subtitle">Desde un menú digital hasta una tienda en línea, hacemos que tu negocio tenga una presencia web profesional.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">▤</div>
+          <p class="service-category">PARA RESTAURANTES</p>
+          <h3>Menú digital QR</h3>
+          <p>Comparte tus productos, categorías y precios desde un enlace que abre en cualquier celular.</p>
+          <ul><li>Diseño adaptable a celular</li><li>Secciones, productos y precios</li><li>Código QR descargable</li><li>Botón para pedidos por WhatsApp</li></ul>
+          <div class="service-footer"><div><small>Desde</small><strong>$1,790 <span>MXN</span></strong></div><a href="https://wa.me/525576901927" data-wa="menu" target="_blank" rel="noopener noreferrer">Cotizar ↗</a></div>
+        </article>
+        <article class="service-card service-featured">
+          <span class="service-featured-label">RECOMENDADO</span>
+          <div class="service-icon" aria-hidden="true">▣</div>
+          <p class="service-category">PARA NEGOCIOS</p>
+          <h3>Página web profesional</h3>
+          <p>Presenta tus servicios, fortalece tu imagen y recibe consultas de clientes potenciales.</p>
+          <ul><li>Diseño personalizado y responsive</li><li>Servicios, fotos y formulario de contacto</li><li>Enlace a WhatsApp y ubicación</li><li>Optimización SEO básica</li></ul>
+          <div class="service-footer"><div><small>Desde</small><strong>$3,490 <span>MXN</span></strong></div><a href="https://wa.me/525576901927" data-wa="web" target="_blank" rel="noopener noreferrer">Cotizar ↗</a></div>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">◇</div>
+          <p class="service-category">PARA VENDER EN LÍNEA</p>
+          <h3>Tienda online</h3>
+          <p>Lleva tus productos a internet con un catálogo y herramientas adaptadas a tu operación.</p>
+          <ul><li>Catálogo y fichas de productos</li><li>Carrito e integración de pagos</li><li>Funciones según el alcance</li><li>Configuración y publicación</li></ul>
+          <div class="service-footer"><div><small>Según proyecto</small><strong>A cotizar</strong></div><a href="https://wa.me/525576901927" data-wa="tienda" target="_blank" rel="noopener noreferrer">Cotizar ↗</a></div>
+        </article>
+      </div>
+      <p class="pricing-note">Precios orientativos de lanzamiento, sujetos al alcance confirmado. Dominio, hosting, integraciones e impuestos, cuando correspondan, se cotizan por separado.</p>
     </section>
 
     <section class="section" id="proyectos">
       <div class="section-head">
         <p>Trabajo real</p>
-        <h2>Proyectos destacados</h2>
+        <h2>Conoce algunos proyectos desarrollados</h2>
       </div>
 
       <article class="project-card">
@@ -113,7 +160,7 @@
             <span>Render</span>
           </div>
 
-          <a href="https://www.tprint.com.mx" target="_blank" class="btn primary small">
+          <a href="https://www.tprint.com.mx" target="_blank" rel="noopener noreferrer" class="btn primary small">
             Ver proyecto
           </a>
         </div>
@@ -159,7 +206,7 @@
             <span>Landing Page</span>
           </div>
 
-          <a href="https://www.naatia.com.mx/" target="_blank" class="btn primary small">
+          <a href="https://www.naatia.com.mx/" target="_blank" rel="noopener noreferrer" class="btn primary small">
             Ver proyecto
           </a>
         </div>
@@ -209,43 +256,53 @@
     <section class="section" id="proceso">
       <div class="section-head">
         <p>Workflow</p>
-        <h2>Cómo trabajo</h2>
+        <h2>Del primer mensaje a tu sitio publicado</h2>
       </div>
 
       <div class="process-grid">
         <div>
           <span>01</span>
-          <h3>Diseño la estructura</h3>
-          <p>Organizo secciones, navegación y flujo del usuario.</p>
+          <h3>Conocemos tu negocio</h3>
+          <p>Definimos objetivos, secciones y el alcance del proyecto.</p>
         </div>
 
         <div>
           <span>02</span>
-          <h3>Desarrollo frontend</h3>
-          <p>Creo interfaces limpias, responsive y atractivas.</p>
+          <h3>Te enviamos la propuesta</h3>
+          <p>Acordamos precio, tiempos, entregables y condiciones.</p>
         </div>
 
         <div>
           <span>03</span>
-          <h3>Conecto backend</h3>
-          <p>Integro base de datos, APIs, pagos y funcionalidades reales.</p>
+          <h3>Diseñamos y desarrollamos</h3>
+          <p>Construimos tu web y revisamos contigo los ajustes incluidos.</p>
         </div>
 
         <div>
           <span>04</span>
-          <h3>Publico en producción</h3>
-          <p>Configuro dominio, SSL, deploy y SEO básico.</p>
+          <h3>Publicamos tu página</h3>
+          <p>Dejamos tu sitio funcionando para que puedas compartirlo.</p>
         </div>
       </div>
     </section>
 
+
+    <section class="section" id="preguntas">
+      <div class="section-head"><p>Preguntas frecuentes</p><h2>Antes de comenzar</h2></div>
+      <div class="faq-list">
+        <details><summary>¿Cuánto tiempo tarda una página web? <span aria-hidden="true">+</span></summary><p>Un sitio sencillo puede estimarse en 5 a 10 días hábiles una vez aprobado el alcance y recibido el contenido. Confirmamos el plazo en cada cotización.</p></details>
+        <details><summary>¿Incluye dominio y hosting? <span aria-hidden="true">+</span></summary><p>El precio de la web y los servicios externos se cotizan por separado. Podemos ayudarte a contratar el dominio y el alojamiento a tu nombre.</p></details>
+        <details><summary>¿Cómo se realizan los pagos? <span aria-hidden="true">+</span></summary><p>Como esquema inicial, podemos trabajar con 50% de anticipo y 50% antes de publicar. Las condiciones se confirman por escrito.</p></details>
+        <details><summary>¿Puedo solicitar modificaciones? <span aria-hidden="true">+</span></summary><p>Sí. La propuesta especificará qué revisiones incluye y cuánto costarían las funciones o secciones adicionales.</p></details>
+      </div>
+    </section>
     <section class="contact" id="contacto">
-      <p class="tag">Trabajemos juntos</p>
-      <h2>¿Quieres crear una web o tienda online?</h2>
-      <p>Estoy listo para desarrollar sitios modernos, funcionales y listos para vender.</p>
+      <p class="tag">Hablemos de tu idea</p>
+      <h2>Hagamos realidad el sitio que tu negocio necesita.</h2>
+      <p>Cuéntanos qué necesitas y recibe una propuesta con alcance y precio claro, sin compromiso.</p>
 
       <div class="contact-actions">
-        <a href="https://wa.me/525576901927" target="_blank" class="btn primary">WhatsApp</a>
+        <a href="https://wa.me/525576901927" data-wa="general" target="_blank" rel="noopener noreferrer" class="btn primary">Cotizar por WhatsApp ↗</a>
 
         <button class="btn secondary" type="button" onclick="copiarCorreo()">
           Copiar correo
@@ -254,6 +311,15 @@
     </section>
   </main>
 
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-about"><a class="brand" href="#inicio"><span class="brand-mark"><img src="https://raw.githubusercontent.com/FGDevStudio/naatia-web/main/img/logo-naatia.png" alt="" width="44" height="44"></span><span class="brand-text">Naatia<small>Soluciones digitales</small></span></a><p>Desarrollo web para negocios que quieren crecer en internet.</p></div>
+      <div><strong>Explora</strong><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div>
+      <div><strong>Contacto</strong><a href="https://wa.me/525576901927" data-wa="general" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><span>Ciudad de México · Atención remota</span></div>
+    </div>
+    <div class="footer-legal">© <span id="year">2026</span> Naatia. Desarrollo web por Fernando Guillén.</div>
+  </footer>
   <div id="toast" class="toast">Correo copiado</div>
 
   <script src="script.js"></script>
