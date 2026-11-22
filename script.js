@@ -127,3 +127,29 @@ window.addEventListener("resize", () => {
   columns = Math.floor(canvas.width / fontSize);
   drops = Array.from({ length: columns }, () => Math.random() * canvas.height);
 });
+/* Mensajes comerciales y navegación móvil */
+const naatiaConsultas = {
+  general: "Hola, vi la página de Naatia y quiero una cotización para mi negocio.",
+  menu: "Hola, me interesa el menú digital QR anunciado desde $1,790 MXN. ¿Podemos cotizar?",
+  web: "Hola, me interesa una página web profesional desde $3,490 MXN. ¿Podemos cotizar?",
+  tienda: "Hola, quiero cotizar una tienda en línea con Naatia."
+};
+document.querySelectorAll("[data-wa]").forEach((a) => {
+  a.href = "https://wa.me/525576901927?text=" + encodeURIComponent(naatiaConsultas[a.dataset.wa] || naatiaConsultas.general);
+});
+const naatiaToggle = document.querySelector(".nav-toggle");
+const naatiaNav = document.getElementById("site-nav");
+if (naatiaToggle && naatiaNav) {
+  naatiaToggle.addEventListener("click", () => {
+    const expanded = naatiaToggle.getAttribute("aria-expanded") !== "true";
+    naatiaToggle.setAttribute("aria-expanded", String(expanded));
+    naatiaToggle.setAttribute("aria-label", expanded ? "Cerrar menú" : "Abrir menú");
+    naatiaNav.classList.toggle("open", expanded);
+  });
+  naatiaNav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
+    naatiaNav.classList.remove("open");
+    naatiaToggle.setAttribute("aria-expanded", "false");
+    naatiaToggle.setAttribute("aria-label", "Abrir menú");
+  }));
+}
+document.getElementById("year").textContent = new Date().getFullYear();
